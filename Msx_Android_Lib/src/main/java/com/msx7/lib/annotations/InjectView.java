@@ -10,4 +10,5 @@ import java.lang.annotation.Target;
 @Target(ElementType.FIELD)
 public @interface InjectView {
     int value();
+    int parent() default  -1;
 }

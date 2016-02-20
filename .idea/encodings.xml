@@ -5,6 +5,16 @@
     <file url="file://$PROJECT_DIR$/Msx_Android_Lib/src/main/java/com/msx7/lib/annotations/InjectActivity.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Msx_Android_Lib/src/main/java/com/msx7/lib/annotations/InjectFragment.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Msx_Android_Lib/src/main/java/com/msx7/lib/annotations/InjectView.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Msx_Android_Lib/src/main/java/com/msx7/lib/widget/list/BaseIList.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Msx_Android_Lib/src/main/java/com/msx7/lib/widget/list/BinderListView.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Msx_Android_Lib/src/main/java/com/msx7/lib/widget/list/EmptyIList.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Msx_Android_Lib/src/main/java/com/msx7/lib/widget/list/IList.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Msx_Android_Lib/src/main/java/com/msx7/lib/widget/list/common/Page.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Msx_Android_Lib/src/main/java/com/msx7/lib/widget/list/footer/IFooter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Msx_Android_Lib/src/main/java/com/msx7/lib/widget/list/footer/IMorePage.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Msx_Android_Lib/src/main/java/com/msx7/lib/widget/list/fresh/EmptyFresh.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Msx_Android_Lib/src/main/java/com/msx7/lib/widget/list/fresh/IFresh.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Msx_Android_Lib/src/main/java/com/msx7/lib/widget/list/impl/SwipRefresh.java" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

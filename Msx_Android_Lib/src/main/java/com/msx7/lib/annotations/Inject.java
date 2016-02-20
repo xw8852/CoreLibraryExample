@@ -27,8 +27,14 @@ public class Inject {
             if (mViewId.value() == 0)
                 continue;
             field.setAccessible(true);
+            View _tmp = null;
+            if (mViewId.parent() != -1) {
+                _tmp = activity.findViewById(mViewId.parent()).findViewById(mViewId.value());
+            }else{
+                activity.findViewById(mViewId.value());
+            }
             try {
-                field.set(activity, activity.findViewById(mViewId.value()));
+                field.set(activity, _tmp);
             } catch (IllegalArgumentException e) {
                 e.printStackTrace();
             } catch (IllegalAccessException e) {
@@ -70,9 +76,13 @@ public class Inject {
                 continue;
             if (mViewId.value() == -1)
                 continue;
+            View _tmp = rootView;
+            if (mViewId.parent() != -1) {
+                _tmp = rootView.findViewById(mViewId.parent());
+            }
             field.setAccessible(true);
             try {
-                field.set(obj, rootView.findViewById(mViewId.value()));
+                field.set(obj, _tmp.findViewById(mViewId.value()));
             } catch (IllegalArgumentException e) {
                 e.printStackTrace();
             } catch (IllegalAccessException e) {
