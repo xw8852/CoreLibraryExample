@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ShapeLinearLayout">
+        <attr name="radius" format="dimension" />
+        <attr name="radius_LT" format="dimension" />
+        <attr name="radius_LB" format="dimension" />
+        <attr name="radius_RT" format="dimension" />
+        <attr name="radius_RB" format="dimension" />
+        <attr name="solide" format="color" />
+        <attr name="strokeColor" format="color" />
+        <attr name="strokeWidth" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="ShapeTextView">
+        <attr name="radius" />
+        <attr name="radius_LT" />
+        <attr name="radius_LB" />
+        <attr name="radius_RT" />
+        <attr name="radius_RB" />
+        <attr name="solide" />
+        <attr name="strokeColor"/>
+        <attr name="strokeWidth" />
+    </declare-styleable>
+    <declare-styleable name="ShapeFrameLayout">
+        <attr name="radius" />
+        <attr name="radius_LT" />
+        <attr name="radius_LB" />
+        <attr name="radius_RT" />
+        <attr name="radius_RB" />
+        <attr name="solide" />
+        <attr name="strokeColor"/>
+        <attr name="strokeWidth" />
+    </declare-styleable>
+
+    <declare-styleable name="ShapeRadioGroup">
+        <attr name="radius" />
+        <attr name="radius_LT" />
+        <attr name="radius_LB" />
+        <attr name="radius_RT" />
+        <attr name="radius_RB" />
+        <attr name="solide" />
+        <attr name="strokeColor"/>
+        <attr name="strokeWidth" />
+    </declare-styleable>
+    <declare-styleable name="ShapeRelativeLayout">
+        <attr name="radius" />
+        <attr name="radius_LT" />
+        <attr name="radius_LB" />
+        <attr name="radius_RT" />
+        <attr name="radius_RB" />
+        <attr name="solide" />
+        <attr name="strokeColor"/>
+        <attr name="strokeWidth" />
+    </declare-styleable>
+    <declare-styleable name="ShapeEditText">
+        <attr name="radius" />
+        <attr name="radius_LT" />
+        <attr name="radius_LB" />
+        <attr name="radius_RT" />
+        <attr name="radius_RB" />
+        <attr name="solide" />
+        <attr name="strokeColor"/>
+        <attr name="strokeWidth" />
+    </declare-styleable>
+</resources>
