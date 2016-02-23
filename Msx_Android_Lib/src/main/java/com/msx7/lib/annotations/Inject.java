@@ -9,7 +9,6 @@ import android.view.View;
 public class Inject {
 
     /**
-     *
      * @param activity
      */
     public static final void inject(Activity activity) {
@@ -28,9 +27,9 @@ public class Inject {
                 continue;
             field.setAccessible(true);
             View _tmp = null;
-            if (mViewId.parent() != -1) {
+            if (mViewId.parent() > 0) {
                 _tmp = activity.findViewById(mViewId.parent()).findViewById(mViewId.value());
-            }else{
+            } else {
                 activity.findViewById(mViewId.value());
             }
             try {
@@ -44,11 +43,10 @@ public class Inject {
     }
 
     /**
-     *
      * @param fragment
      * @return
      */
-    public  static final  View inject(Fragment fragment) {
+    public static final View inject(Fragment fragment) {
         if (fragment == null)
             return null;
         InjectActivity mActivityLayout = fragment.getClass().getAnnotation(InjectActivity.class);
@@ -63,21 +61,20 @@ public class Inject {
     }
 
     /**
-     *
      * @param obj
      * @param rootView
      */
-    public static final void inject(Object obj,View rootView){
-        if(rootView==null||obj==null)return ;
+    public static final void inject(Object obj, View rootView) {
+        if (rootView == null || obj == null) return;
         Field[] mFields = obj.getClass().getDeclaredFields();
         for (Field field : mFields) {
             InjectView mViewId = field.getAnnotation(InjectView.class);
             if (mViewId == null)
                 continue;
-            if (mViewId.value() == -1)
+            if (mViewId.value() <= 0)
                 continue;
             View _tmp = rootView;
-            if (mViewId.parent() != -1) {
+            if (mViewId.parent() > 0) {
                 _tmp = rootView.findViewById(mViewId.parent());
             }
             field.setAccessible(true);
